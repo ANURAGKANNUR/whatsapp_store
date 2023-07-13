@@ -26,7 +26,7 @@ class LoginController extends GetxController {
         body: params,
       );
       if(response.statusCode !=200){
-        Get.snackbar('Inavlid password', '');
+        Get.snackbar('Invalid password', '');
       }
       else{
         EasyLoading.show();
