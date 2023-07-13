@@ -103,7 +103,7 @@ class LoginPage extends GetView<LoginController> {
                       onPressed: () {
                         if(_formKey.currentState!.validate()){
                           controller.loginCall(controller.usernameController.text, controller.passwordController.text);
-                          Get.toNamed(Routes.profilePage);
+                          // Get.toNamed(Routes.profilePage);
                         }
                       },
                       style: ElevatedButton.styleFrom(

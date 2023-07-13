@@ -9,11 +9,11 @@ import '../../../models/user_model.dart';
 
 class ProfileController extends GetxController {
   var user = User().obs;
-  @override
-  onInit() {
-    getUserDetails();
-    super.onInit();
-  }
+  // @override
+  // onInit() {
+  //   getUserDetails();
+  //   super.onInit();
+  // }
 
   getUserDetails() async {
     EasyLoading.show();
