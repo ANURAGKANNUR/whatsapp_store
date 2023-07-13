@@ -57,6 +57,7 @@ class LoginController extends GetxController {
   checkLoginStatus() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     if(prefs.getBool('isLoggedIn')==true){
+      profileController.getUserDetails();
       Get.toNamed(Routes.profilePage);
     }
     else{
